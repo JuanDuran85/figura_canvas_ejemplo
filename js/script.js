@@ -11,4 +11,11 @@ function dibujo(x,y,z,w) {
     ctx.fillRect(x,y,z,w);
 };
 
+// dibujo en color amarillo
+function dibujo2(x,y,z,w) {
+    ctx.fillStyle='yellow';
+    ctx.fillRect(x,y,z,w);
+};
+
 dibujo(350,100,50,50);
+dibujo2(365,150,20,30);
