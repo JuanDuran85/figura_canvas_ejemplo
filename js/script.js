@@ -17,8 +17,16 @@ function dibujo2(x,y,z,w) {
     ctx.fillRect(x,y,z,w);
 };
 
+// dibujo en color azul
+function dibujo3(x,y,z,w) {
+    ctx.fillStyle='blue';
+    ctx.fillRect(x,y,z,w);
+};
+
 dibujo(350,100,50,50);
 dibujo2(365,150,20,30);
 dibujo(340,180,70,80);
 dibujo(285,180,60,15);
 dibujo(410,180,60,15);
+dibujo3(340,250,10,50);
+dibujo3(400,250,10,50);
