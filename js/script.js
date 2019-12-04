@@ -28,20 +28,23 @@ setInterval (() => {
     //limpiamos el canvas
     ctx.clearRect(0, 0, 1000, 800);
 
-    dibujo(350,100,50,50);
-    dibujo2(365,150,20,30);
-    dibujo(340,180,70,80);
-    dibujo(285,180,60,15);
-    dibujo(410,180,60,15);
-    dibujo3(340,250,10,50);
-    dibujo3(400,250,10,50);
+    dibujo(350+posicion,100+posicion,50,50);
+    dibujo2(365+posicion,150+posicion,20,30);
+    dibujo(340+posicion,180+posicion,70,80);
+    dibujo(285+posicion,180+posicion,60,15);
+    dibujo(410+posicion,180+posicion,60,15);
+    dibujo3(340+posicion,250+posicion,10,50);
+    dibujo3(400+posicion,250+posicion,10,50);
 
     posicion++;
-    console.log(posicion);
 
     if (posicion > 300) {
         posicion = 0;
     };
 },30);
 
+let punto = (event) => {
+    $('#aqui').text(`X:${event.pageX} + Y:${event.pageY}`);
+};
 
+$('#canvas').click(punto);
